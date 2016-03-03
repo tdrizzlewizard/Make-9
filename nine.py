@@ -11,7 +11,7 @@ while number < 9:
     userChoice = int(userChoice)
     if userChoice == 1:
         print(" Your new number is " + str(number + numero))
-        number = int(number + numero)
+        number = float(number + numero)
     
     
     
@@ -22,7 +22,7 @@ while number < 9:
             print(" Your final number is " + str(number) + ", not close")
         if number > 6:
             print(" Your final number is " + str(number) + " So close! ")
-        exit
+        exit()
         
 
 
