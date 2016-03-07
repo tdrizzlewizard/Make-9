@@ -1,12 +1,10 @@
 import random
 
-options = [1,2,3]
-
 number = float(0)
 
 
 while number < 9:
-    numero = random.choice(options)
+    numero = random.random() * 3
     userChoice = raw_input(" Would you like to hit or stick?- press 1 for hit and 2 for stick ")
     userChoice = int(userChoice)
     if userChoice == 1:
@@ -21,16 +19,20 @@ while number < 9:
         if number == 6:
             print(" Your final number is " + str(number) + ", not close")
         if number > 6:
-            print(" Your final number is " + str(number) + " So close! ")
+            print(" Your final number is " + str(number) + " Pretty close! ")
+        
+        if number > 8.5:
+            print(" Your final number is " + str(number) + "SOO SOOO CLOSE")
         exit()
         
+        
 
-
-
-if number == 9:
-    print(" You win! Congragulations! ")
+        
     
+    
+if number < 9.2:
+     print(" You win! Congragulations! ")
 
-elif number > 9:
+else:
     print(" Sorry! Bust! ")
 
